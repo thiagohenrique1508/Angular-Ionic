@@ -1,0 +1,15 @@
+
+Instalar:
+* npm install -g @angular/cli
+* npm install -g ionic
+
+Verificar a versão: 
+
+Angular: ng --version
+Ionic: ionic --version
+
+Criar o projeto: ionic start eshop blank
+
+Executar o projeto: ionic serve
+
+Build: ionic build

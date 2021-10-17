@@ -1,0 +1,1 @@
+Este arquivo Server.json é para carregar no Mockoon e simular o servidor.
