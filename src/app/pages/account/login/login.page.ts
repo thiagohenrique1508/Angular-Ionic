@@ -62,6 +62,13 @@ export class LoginPage implements OnInit {
         });
   }
 
+  async resetPassword() {
+    if (this.form.controls.username.invalid) {
+      this.showError('Usuário inválido');
+      return;
+    }
+  }
+
   async showError(message: string) {
     //const error = await this.toastCtrl.create({ message: message, showCloseButton: true, closeButtonText: 'Fechar',
     const error = await this.toastCtrl.create({ message, duration: 3000 });
