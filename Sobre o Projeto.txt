@@ -13,3 +13,8 @@ Criar o projeto: ionic start eshop blank
 Executar o projeto: ionic serve
 
 Build: ionic build
+
+
+Criar um módulo com nome de "components": ionic generate module components
+
+Criar um component para o módulo "components": ionic generate component components/loading
