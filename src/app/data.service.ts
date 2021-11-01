@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class DataService {
 
-  public baseUrl = 'http://localhost:8100';
+  public baseUrl = environment.apiEndpoint;
 
   constructor(private http: HttpClient) { }
 

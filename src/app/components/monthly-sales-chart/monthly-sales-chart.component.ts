@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 
 declare var Chart: any;
@@ -25,10 +25,9 @@ export class MonthlySalesChartComponent implements AfterViewInit {
   }
 
   render() {
-
-    let el: any = document.getElementById('myChart');
-    let ctx = el.getContext('2d');
-    let myChart = new Chart(ctx, {
+    var el: any = document.getElementById('myChart');
+    var ctx = el.getContext('2d');
+    var myChart = new Chart(ctx, {
       type: 'bar',
       data: this.data,
       options: {

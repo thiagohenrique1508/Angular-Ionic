@@ -19,20 +19,19 @@ export class SecurityUtil {
         const user = this.get();
 
         if (user && user.token)
-            {return true;}
+            return true;
         else
-            {return false;}
+            return false;
     }
 
     public static isInRole(role: string): boolean {
         const user = this.get();
 
-        if (!user)
-            {return false;}
+        if (!user) 
+            return false;
 
-        // eslint-disable-next-line eqeqeq
-        if (!user.roles || user.roles.length == 0)
-            {return false;}
+        if (!user.roles || user.roles.length == 0) 
+            return false;
 
         return user.roles.includes(role);
     }
